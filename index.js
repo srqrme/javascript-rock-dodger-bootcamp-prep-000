@@ -130,9 +130,10 @@ function endGame() {
     GAME.removeChild(ROCKS[0])
     ROCKS.shift
   }
-  
+
   clearInterval(gameInterval)
   document.removeEventListener('keydown', moveDodger)
+  return alert(`You Lose!`)
 }
 
 function moveDodger(e) {
