@@ -83,6 +83,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
+
      if(checkCollision(rock) === true) {
        endGame()
      }
@@ -92,6 +93,8 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
 
+     else if(top < GAME_HEIGHT - 20)
+     
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
